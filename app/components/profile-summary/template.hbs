@@ -1,19 +1,19 @@
 {{#link-to "user"}}
-  old_yallr
+  {{user.username}}
 {{/link-to}}
 
 <ul class="profile-stats">
   <li>
     <h4>Yells</h4>
-    <p>10</p>
+    <p>{{user.numberOfYells}}</p>
   </li>
   <li>
     <h4>Following</h4>
-    <p>42</p>
+    <p>{{user.numberOfFollowing}}</p>
   </li>
   <li>
     <h4>Followers</h4>
-    <p>29</p>
+    <p>{{user.numberOfFollowers}}</p>
   </li>
 </ul>
 
