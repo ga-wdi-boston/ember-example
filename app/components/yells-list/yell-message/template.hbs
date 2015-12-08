@@ -1,9 +1,9 @@
 <div class="info">
   {{#link-to 'user'}}
-    old_yallr
+    {{yell.user.username}}
   {{/link-to}}
-  <time>5 minutes ago</time>
-  <p>Hello world!</p>
+  <time>{{yell.createdAt}}</time>
+  <p>{{yell.text}}</p>
 </div>
 
 {{yield}}

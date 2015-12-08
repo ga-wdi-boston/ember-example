@@ -1,7 +1,9 @@
-{{yells-list/yell-message}}
-
+{{#each sortedYells as |yell|}}
+  {{yells-list/yell-message yell=yell}}
+{{else}}
 <div class="no-yells">
   <p>There are no yells to display.</p>
 </div>
+{{/each}}
 
 {{yield}}
